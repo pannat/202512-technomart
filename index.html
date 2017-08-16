@@ -6,255 +6,264 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a class="header-logo">
-          Техномарт
-        </a>
-        <div class="header-tools">
-          <form class="header-tools__search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="header-tools__input" type="search" placeholder="Поиск">
-            <a class="header-tools__button" href="#">Найти</a>
-          </form>
-          <a class="header-tools__link-bookmark" href="#">Закладки:
-            <span class="header-tools__count-bookmark">0</span>
+      <div class="main-header__top">
+        <div class="container">
+          <a class="header-logo">
+            Техномарт
           </a>
-          <a class="header-tools__link-cart" href="#">Корзина:
-            <span class="header-tools__count-cart">0</span>
-          </a>
-          <a class="header-tools__link-order" href="#">Оформить заказ</a>
+          <div class="header-tools">
+            <form class="header-tools__search" action="https://echo.htmlacademy.ru" method="get">
+              <input class="header-tools__input" type="search" placeholder="Поиск">
+              <a class="header-tools__button" href="#">Найти</a>
+            </form>
+            <a class="header-tools__link-bookmark" href="#">Закладки:
+              <span class="header-tools__count-bookmark">0</span>
+            </a>
+            <a class="header-tools__link-cart" href="#">Корзина:
+              <span class="header-tools__count-cart">0</span>
+            </a>
+            <a class="header-tools__link-order" href="#">Оформить заказ</a>
+          </div>
         </div>
-        <div class="header-info">
-          <p class="header-info__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <p class="header-info__tel">
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
-          <p class="header-info__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <ul class="header-profile-not-auth">
-          <li class="header-profile-not-auth__item">
-            <a class="header-profile-not-auth__link" href="#">Войти</a>
-          </li>
-          <li class="header-profile-not-auth__item">
-            <a class="header-profile-not-auth__link" href="#">Регистрация</a>
-          </li>
-        </ul>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+      </div>
+      <div class="main-header__bottom">
+        <div class="container">
+          <div class="header-info">
+            <p class="header-info__text">Интернет-магазин строительных материалов и инструментов для ремонта
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <ul class="header-profile-not__auth">
+            <li class="header-profile-not-auth__item">
+              <a class="header-profile-not-auth__link" href="#">Войти</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="company.html">Компания</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="news.html">Новости</a></li>
-            <li class="main-nav__item">
-              <a class="main-nav-link" href="offers.html">Спецпредложения</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="shipping.html">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="contacts.html">Контакты</a>
+            <li class="header-profile-not-auth__item">
+              <a class="header-profile-not-auth__link" href="#">Регистрация</a>
             </li>
           </ul>
-        </nav>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="company.html">Компания</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="news.html">Новости</a></li>
+              <li class="main-nav__item">
+                <a class="main-nav-link" href="offers.html">Спецпредложения</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="shipping.html">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container">
         <h1 class="main-title visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <section class="promo">
-          <h2 class="promo__title visually-hidden">Промо-блок</h2>
+          <div class="container">
+            <h2 class="promo__title visually-hidden">Промо-блок</h2>
 
-          <ul class="promo__catalog">
-            <li class="promo__item">
-              <h3 class="promo__title">Материалы</h3>
-              <a class="promo__link button" href="#">на любой вкус</a>
-            </li>
-            <li class="promo__item">
-              <h3 class="promo__title">Инструмент</h3>
-              <a class="promo__link button" href="#">на все случаи жизни</a>
-            </li>
-            <li class="promo__item">
-              <h3 class="promo__title">Техника</h3>
-              <a class="promo__link button" href="#">для стройки</a>
-            </li>
-            <li class="promo__item-slider">
-              <input class="promo__input" type="radio" id="btn-1" name="toggle" checked>
-              <input class="promo__input" type="radio" id="btn-2" name="toggle">
-              <div class="promo__slider-controls">
-                <label class="promo__toggle" for="btn-1"></label>
-                <label class="promo__toggle" for="btn-2"></label>
-              </div>
-              <div class="promo__slider-inner">
-                <div class="promo__slides">
-                  <div class="promo__slide">
-                    <h3 class="promo__title">Дрели</h3>
-                    <a href="#">Соседям на радость</a>
-                    <a class="promo__link button" href="catalog.html">Открыть каталог</a>
-                  </div>
-                  <div class="promo__slide">
-                    <h3 class="promo__title">Перфораторы</h3>
-                    <a class="promo__link" href="#">Настоящие мужские игрушки</a>
-                    <a class="promo__link button" href="catalog.html">Открыть каталог</a>
+            <ul class="promo__catalog">
+              <li class="promo__item">
+                <h3 class="promo__title">Материалы</h3>
+                <a class="promo__link button" href="#">на любой вкус</a>
+              </li>
+              <li class="promo__item">
+                <h3 class="promo__title">Инструмент</h3>
+                <a class="promo__link button" href="#">на все случаи жизни</a>
+              </li>
+              <li class="promo__item">
+                <h3 class="promo__title">Техника</h3>
+                <a class="promo__link button" href="#">для стройки</a>
+              </li>
+              <li class="promo__item-slider">
+                <input class="promo__input" type="radio" id="btn-1" name="toggle" checked>
+                <input class="promo__input" type="radio" id="btn-2" name="toggle">
+                <div class="promo__slider-controls">
+                  <label class="promo__toggle" for="btn-1"></label>
+                  <label class="promo__toggle" for="btn-2"></label>
+                </div>
+                <div class="promo__slider-inner">
+                  <div class="promo__slides">
+                    <div class="promo__slide">
+                      <h3 class="promo__title">Дрели</h3>
+                      <a href="#">Соседям на радость</a>
+                      <a class="promo__link button" href="catalog.html">Открыть каталог</a>
+                    </div>
+                    <div class="promo__slide">
+                      <h3 class="promo__title">Перфораторы</h3>
+                      <a class="promo__link" href="#">Настоящие мужские игрушки</a>
+                      <a class="promo__link button" href="catalog.html">Открыть каталог</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <h3 class="promo__title">Скидка 50%</h3>
-              <a class="promo__link button" href="#">на 350 товаров</a>
-            </li>
-            <li>
-              <h3 class="promo__title">Доставка</h3>
-              <a class="promo__link button" href="#">бесплатно</a>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <h3 class="promo__title">Скидка 50%</h3>
+                <a class="promo__link button" href="#">на 350 товаров</a>
+              </li>
+              <li>
+                <h3 class="promo__title">Доставка</h3>
+                <a class="promo__link button" href="#">бесплатно</a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="popular">
 
           <section class="popular__products">
-            <div class="popular__top">
-              <h2 class="popular__title">Популярные товары</h2>
-              <a class="popular__link button" href="#">Все популярные товары</a>
-            </div>
+            <div class="container">
+              <div class="popular__top">
+                <h2 class="popular__title">Популярные товары</h2>
+                <a class="popular__link button" href="#">Все популярные товары</a>
+              </div>
 
-            <ul class="popular__catalog">
-              <li class="popular__item">
-                <h3 class="popular__title">
-                  <a class="popular__link" href="item.html">Перфоратор BOSH BFG 9000</a>
-                </h3>
-                <p class="popular__image">
-                  <a class="popular__link" href="item.html">
-                    <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
-                  </a>
-                </p>
-                <p class="popular__price">
-                  <del>32500 Р.</del>
-                  <ins>
-                    <b>25500 Р.</b>
-                  </ins>
-                </p>
-                <div class="popular__action">
-                  <a class="popular__link-buy" href="#">Купить</a>
-                  <a class="popular__link-bookmark" href="#">В закладки</a>
-                </div>
-              </li>
-              <li class="popular__item">
-                <h3 class="popular__title">
-                  <a class="popular__link" href="item.html">Перфоратор BOSH BFG 3000</a>
-                </h3>
-                <p class="popular__image">
-                  <a class="popular__link" href="item.html">
-                    <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
-                  </a>
-                </p>
-                <p class="popular__price">
-                  <del>22500 Р.</del>
-                  <ins>
-                    <b>15500 Р.</b>
-                  </ins>
-                </p>
-                <div class="popular__action">
-                  <a class="popular__link-buy" href="#">Купить</a>
-                  <a class="popular__link-bookmark" href="#">В закладки</a>
-                </div>
-              </li>
-              <li class="popular__item">
-                <h3 class="popular__title">
-                  <a class="popular__link" href="item.html">Перфоратор BOSH BFG 6000</a>
-                </h3>
-                <p class="popular__image">
-                  <a class="popular__link" href="item.html">
-                    <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
-                  </a>
-                </p>
-                <p class="popular__price">
-                  <del>30500 Р.</del>
-                  <ins>
-                    <b>25500 Р.</b>
-                  </ins>
-                </p>
-                <div class="popular__action">
-                  <a class="popular__link-buy" href="#">Купить</a>
-                  <a class="popular__link-bookmark" href="#">В закладки</a>
-                </div>
+              <ul class="popular__catalog">
                 <li class="popular__item">
                   <h3 class="popular__title">
-                    <a class="popular__link" href="item.html">Перфоратор BOSH BFG 2000</a>
+                    <a class="popular__link" href="item.html">Перфоратор BOSH BFG 9000</a>
                   </h3>
                   <p class="popular__image">
                     <a class="popular__link" href="item.html">
                       <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
                     </a>
-                </p>
-                <p class="popular__price">
-                  <b>12500 Р.</b>
-                </p>
-                <div class="popular__action">
-                  <a class="popular__link-buy" href="#">Купить</a>
-                  <a class="popular__link-bookmark" href="#">В закладки</a>
-                </div>
-              </li>
-            </ul>
+                  </p>
+                  <p class="popular__price">
+                    <del>32500 Р.</del>
+                    <ins>
+                      <b>25500 Р.</b>
+                    </ins>
+                  </p>
+                  <div class="popular__action">
+                    <a class="popular__link-buy" href="#">Купить</a>
+                    <a class="popular__link-bookmark" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="popular__item">
+                  <h3 class="popular__title">
+                    <a class="popular__link" href="item.html">Перфоратор BOSH BFG 3000</a>
+                  </h3>
+                  <p class="popular__image">
+                    <a class="popular__link" href="item.html">
+                      <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
+                    </a>
+                  </p>
+                  <p class="popular__price">
+                    <del>22500 Р.</del>
+                    <ins>
+                      <b>15500 Р.</b>
+                    </ins>
+                  </p>
+                  <div class="popular__action">
+                    <a class="popular__link-buy" href="#">Купить</a>
+                    <a class="popular__link-bookmark" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="popular__item">
+                  <h3 class="popular__title">
+                    <a class="popular__link" href="item.html">Перфоратор BOSH BFG 6000</a>
+                  </h3>
+                  <p class="popular__image">
+                    <a class="popular__link" href="item.html">
+                      <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
+                    </a>
+                  </p>
+                  <p class="popular__price">
+                    <del>30500 Р.</del>
+                    <ins>
+                      <b>25500 Р.</b>
+                    </ins>
+                  </p>
+                  <div class="popular__action">
+                    <a class="popular__link-buy" href="#">Купить</a>
+                    <a class="popular__link-bookmark" href="#">В закладки</a>
+                  </div>
+                  <li class="popular__item">
+                    <h3 class="popular__title">
+                      <a class="popular__link" href="item.html">Перфоратор BOSH BFG 2000</a>
+                    </h3>
+                    <p class="popular__image">
+                      <a class="popular__link" href="item.html">
+                        <img src="http://placehold.it/190x150" alt="Перфоратор BOSH BFG 9000" width="190" height="150">
+                      </a>
+                  </p>
+                  <p class="popular__price">
+                    <b>12500 Р.</b>
+                  </p>
+                  <div class="popular__action">
+                    <a class="popular__link-buy" href="#">Купить</a>
+                    <a class="popular__link-bookmark" href="#">В закладки</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="popular__brands">
-            <div class="popular__top">
-              <h2 class="popular__title">Популярные производители</h2>
-              <a class="popular__link button" href="#">Все производители</a>
-            </div>
+            <div class="container">
+              <div class="popular__top">
+                <h2 class="popular__title">Популярные производители</h2>
+                <a class="popular__link button" href="#">Все производители</a>
+              </div>
 
-            <ol class="popular__brands">
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="BOSH" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="Makita" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="DeWolt" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="Интерскол" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="HITACHI" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="LG" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link"  href="#">
-                  <img src="http://placehold.it/220x145" alt="AEG" width="220" height="145">
-                </a>
-              </li>
-              <li class="popular__brand">
-                <a class="popular__link" href="#">
-                  <img src="http://placehold.it/220x145" alt="metabo" width="220" height="145">
-                </a>
-              </li>
-            </ol>
+              <ol class="popular__brands">
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="BOSH" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="Makita" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="DeWolt" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="Интерскол" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="HITACHI" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="LG" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link"  href="#">
+                    <img src="http://placehold.it/220x145" alt="AEG" width="220" height="145">
+                  </a>
+                </li>
+                <li class="popular__brand">
+                  <a class="popular__link" href="#">
+                    <img src="http://placehold.it/220x145" alt="metabo" width="220" height="145">
+                  </a>
+                </li>
+              </ol>
+            </div>
           </section>
         </section>
-      </div>
 
       <section class="services">
         <div class="container">
