@@ -1,0 +1,24 @@
+body {
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-title,
+.popular__title{
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.catalog__title-product,
+.popular__title-product {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
