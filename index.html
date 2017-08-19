@@ -14,8 +14,8 @@
           </a>
           <div class="header-tools">
             <form class="header-tools__search" action="https://echo.htmlacademy.ru" method="get">
-              <input class="header-tools__input" type="search" placeholder="Поиск">
-              <a class="header-tools__button" href="#">Найти</a>
+              <input class="header-tools__input" type="search" placeholder="Поиск" value>
+              <button class="header-tools__button" type="submit">Найти</button>
             </form>
             <a class="header-tools__link-bookmark" href="#">Закладки:
               <span class="header-tools__count-bookmark">0</span>
@@ -31,6 +31,7 @@
         <div class="container">
           <div class="header-info">
             <p class="header-info__text">Интернет-магазин строительных материалов и инструментов для ремонта
+              <span class="visually-hidden">Наши контакты:</span>
               <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
@@ -76,50 +77,56 @@
           <div class="container">
             <h2 class="promo__title visually-hidden">Промо-блок</h2>
 
-            <ul class="promo__catalog">
-              <li class="promo__item">
+            <div class="promo__catalog">
+              <div class="promo__item">
                 <h3 class="promo__title">Материалы</h3>
                 <a class="promo__link button" href="#">на любой вкус</a>
-              </li>
-              <li class="promo__item">
+              </div>
+            </div>
+              <div class="promo__item">
                 <h3 class="promo__title">Инструмент</h3>
                 <a class="promo__link button" href="#">на все случаи жизни</a>
-              </li>
-              <li class="promo__item">
+              </div>
+              <div class="promo__item">
                 <h3 class="promo__title">Техника</h3>
                 <a class="promo__link button" href="#">для стройки</a>
-              </li>
-              <li class="promo__item-slider">
+              </div>
+              <div class="promo__item-slider">
+                <h3 class="visually-hidden">Слайды: перфораторы и дрели</h3>
                 <input class="promo__input" type="radio" id="btn-1" name="toggle" checked>
                 <input class="promo__input" type="radio" id="btn-2" name="toggle">
                 <div class="promo__slider-controls">
-                  <label class="promo__toggle" for="btn-1"></label>
-                  <label class="promo__toggle" for="btn-2"></label>
+                  <label class="promo__toggle" for="btn-1">
+                    <span class="visually-hidden">Показать слайд перфораторы</span>
+                  </label>
+                  <label class="promo__toggle" for="btn-2">
+                    <span class="visually-hidden">Показать слайд дрели</span>
+                  </label>
                 </div>
                 <div class="promo__slider-inner">
                   <div class="promo__slides">
                     <div class="promo__slide">
                       <h3 class="promo__title">Дрели</h3>
-                      <a href="#">Соседям на радость</a>
-                      <a class="promo__link button" href="catalog.html">Открыть каталог</a>
+                      <p>Соседям на радость</p>
+                      <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
                     </div>
                     <div class="promo__slide">
                       <h3 class="promo__title">Перфораторы</h3>
-                      <a class="promo__link" href="#">Настоящие мужские игрушки</a>
-                      <a class="promo__link button" href="catalog.html">Открыть каталог</a>
+                      <p>Настоящие мужские игрушки</p>
+                      <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div>
                 <h3 class="promo__title">Скидка 50%</h3>
                 <a class="promo__link button" href="#">на 350 товаров</a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <h3 class="promo__title">Доставка</h3>
                 <a class="promo__link button" href="#">бесплатно</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -143,9 +150,13 @@
                     </a>
                   </p>
                   <p class="popular__price">
-                    <del>32500 Р.</del>
+                    <span class="visually-hidden">Цена</span>
+                    <del>
+                      <span class="visually-hidden">была</span> 32500 Р.
+                    </del>
                     <ins>
-                      <b>25500 Р.</b>
+                      <b>
+                        <span class="visually-hidden">стала</span> 25500 Р.</b>
                     </ins>
                   </p>
                   <div class="popular__action">
@@ -163,9 +174,14 @@
                     </a>
                   </p>
                   <p class="popular__price">
-                    <del>22500 Р.</del>
+                    <span class="visually-hidden">Цена</span>
+                    <del>
+                      <span class="visually-hidden">была</span> 22500 Р.
+                    </del>
                     <ins>
-                      <b>15500 Р.</b>
+                      <b>
+                        <span class="visually-hidden">стала</span> 15500 Р.
+                      </b>
                     </ins>
                   </p>
                   <div class="popular__action">
@@ -183,9 +199,14 @@
                     </a>
                   </p>
                   <p class="popular__price">
-                    <del>30500 Р.</del>
+                    <span class="visually-hidden">Цена</span>
+                    <del>
+                      <span class="visually-hidden">была</span> 30500 Р.
+                    </del>
                     <ins>
-                      <b>25500 Р.</b>
+                      <b>
+                        <span class="visually-hidden">стала</span> 25500 Р.
+                      </b>
                     </ins>
                   </p>
                   <div class="popular__action">
@@ -195,6 +216,7 @@
                   <li class="popular__item">
                     <h3 class="popular__product-title">
                       <a class="popular__link" href="item.html">Перфоратор BOSH BFG 2000</a>
+                      <sup class="visually-hidden">Новинка</sup>
                     </h3>
                     <p class="popular__image">
                       <a class="popular__link" href="item.html">
@@ -202,6 +224,7 @@
                       </a>
                   </p>
                   <p class="popular__price">
+                    <span class="visually-hidden">Цена</span>
                     <b>12500 Р.</b>
                   </p>
                   <div class="popular__action">
@@ -273,18 +296,25 @@
             Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
           </p>
           <div class="services__slider">
+            <h3>Слайды: доставка, гарантия и кредит</h3>
             <input class="visually-hidden" type="radio" id="btn-3" name="toggle" checked>
             <input class="visually-hidden" type="radio" id="btn-4" name="toggle">
             <input class="visually-hidden" type="radio" id="btn-5" name="toggle">
             <ul class="services__list">
               <li class="services__item">
-                <label class="services__toggle button" for="btn-3">Доставка</label>
+                <label class="services__toggle button" for="btn-3">
+                  <span class="visually-hidden">Показать слайд</span> Доставка
+                </label>
               </li>
               <li class="services__item">
-                <label class="services__toggle button" for="btn-4">Гарантия</label>
+                <label class="services__toggle button" for="btn-4">
+                  <span class="visually-hidden">Показать слайд</span> Гарантия
+                </label>
               </li>
               <li class="services__item">
-                <label class="services__toggle button" for="btn-5">Кредит</label>
+                <label class="services__toggle button" for="btn-5">
+                  <span class="visually-hidden">Показать слайд</span> Кредит
+                </label>
               </li>
             </ul>
             <div class="services__slider-inner">
@@ -334,7 +364,7 @@
             <h2 class="about-us__title">Контакты</h2>
             <p class="about-us__text">Вы можете забрать товар сами, заехав в наш офис:</p>
             <p class="about-us__map">
-              <img src="img/map.png" alt="Карта проезда" width="300" height="158">
+              <img src="img/map.png" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="300" height="158">
             </p>
             <a class="about-us__link button" href="#">Заблудились? Напишите нам!</a>
           </div>
@@ -377,8 +407,9 @@
           </ul>
         </nav>
         <div class="footer-info">
-          <p class="footer-info__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="footer-info__tel">
+          <p class="footer-info__text">
+            <span class="visually-hidden">Наши контакты:</span>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
         </div>
@@ -386,15 +417,22 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom__copyright">
-            <p class="footer-bottom__text">©2010-2017 Компания «Техномарт»</p>
-            <p class="footer-bottom__text">Все права защищены</p>
+            <p class="footer-bottom__text">©2010-2017 Компания «Техномарт»<br>
+              Все права защищены</p>
           </div>
           <div class="footer-bottom__social">
-            <a class="footer-bottom__link" href="#">Вконтакте</a>
-            <a class="footer_bottom__link" href="#">Фейсбук</a>
-            <a class="footer_bottom__link" href="#">Инстаграм</a>
+            <a class="footer-bottom__link" href="#">
+              <span class="visually-hidden">Наш</span> Вконтакте
+            </a>
+            <a class="footer_bottom__link" href="#">
+              <span class="visually-hidden">Наш</span> Фейсбук
+            </a>
+            <a class="footer_bottom__link" href="#">
+              <span class="visually-hidden">Наш</span> Инстаграм
+            </a>
           </div>
           <div class="footer-bottom__developer">
+            <span class="visually-hidden">Информация о разработчике:</span>
             <p class="footer-bottom__text">Обратная связь:
               <a class="footer-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
@@ -407,6 +445,7 @@
     </footer>
 
     <section class="modal modal-write-us">
+      <h2 class="modal-write-us__title visually-hidden">Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us__column_left">
           <label for="name">Ваше имя:</label>
@@ -422,12 +461,15 @@
         </p>
           <button class="write-us__button button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">X</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="modal-map__title visually-hidden">Как до нас добраться</h2>
-      <button class="modal-close" type="button">x</button>
+      <p class="modal-map__image-map">
+        <img src="img/map.png" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="300" height="158">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
