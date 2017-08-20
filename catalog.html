@@ -4,18 +4,20 @@
     <meta charset="utf-8">
     <title>Интернет-магазин: Техномарт</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__top">
-        <div class="container">
+        <div class="container main-header__inner-top">
           <a class="header-logo">
             Техномарт
           </a>
           <div class="header-tools">
             <form class="header-tools__search" action="https://echo.htmlacademy.ru" method="get">
-              <input class="header-tools__input" type="search" placeholder="Поиск" value>
-              <button class="header-tools__button" type="submit">Найти</button>
+              <input class="header-tools__input" type="search" name="search" placeholder="Поиск" value>
+              <button class="header-tools__button" type="submit"><span class="visually-hidden">Найти</span></button>
             </form>
             <a class="header-tools__link-bookmark" href="#">Закладки:
               <span class="header-tools__count-bookmark">0</span>
@@ -28,7 +30,7 @@
         </div>
       </div>
       <div class="main-header__bottom">
-        <div class="container">
+        <div class="container main-header__inner-bottom">
           <div class="header-info">
             <p class="header-info__text">Интернет-магазин строительных материалов и инструментов для ремонта
               <span class="visually-hidden">Наши контакты:</span>
@@ -459,15 +461,9 @@
               Все права защищены</p>
           </div>
           <div class="footer-bottom__social">
-            <a class="footer-bottom__link" href="#">
-              <span class="visually-hidden">Наш</span> Вконтакте
-            </a>
-            <a class="footer_bottom__link" href="#">
-              <span class="visually-hidden">Наш</span> Фейсбук
-            </a>
-            <a class="footer_bottom__link" href="#">
-              <span class="visually-hidden">Наш</span> Инстаграм
-            </a>
+            <a class="footer-bottom__link" href="#">Вконтакте</a>
+            <a class="footer_bottom__link" href="#">Фейсбук</a>
+            <a class="footer_bottom__link" href="#">Инстаграм</a>
           </div>
           <div class="footer-bottom__developer">
             <span class="visually-hidden">Информация о разработчике:</span>

@@ -1,5 +1,5 @@
 body {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
@@ -7,7 +7,7 @@ body {
 
 .main-title,
 .popular__title{
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -16,17 +16,62 @@ body {
 
 .catalog__title-product,
 .popular__title-product {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
-/*
 .visually-hidden {
-position: absolute;
-clip: rect(0 0 0 0);
-width: 1px;
-height: 1px;
-margin: -1px;
-*/
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-header__top,
+.main-header__bottom{
+  flex-basis: 100%;
+}
+
+.main-header__top {
+  background-color: #293449;
+}
+
+.main-header__inner-top {
+  display: flex;
+}
+
+.header-logo {
+  box-sizing: border-box;
+  width: 220px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 5px 0 0 #b52933;
+  padding: 10px 0;
+  color: white;
+  background-color: #ee3643;
+}
+
+.header-tools {
+  display: flex;
+  width: 720px;
+}
+
+.header-tools__search {
+  width: 250px;
+}
+
