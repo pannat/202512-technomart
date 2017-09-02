@@ -301,18 +301,18 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: block;
-  width: 100px;
-  padding: 9px 0 9px 50px;
+  width: 90px;
+  padding: 9px 10px 9px 50px;
 
   font-size: 17px;
-  white-space: nowrap;
   color: #ffffff;
   background-color: #ee3643;
 }
 
 .header-tools__link-bookmark {
-  width: 106px;
+  width: 96px;
   padding-left: 44px;
+  padding-right: 10px;
 }
 
 .header-tools__link-bookmark::before {
@@ -1605,7 +1605,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: inherit;
   text-align: center;
-  white-space: nowrap;
 }
 
 .popular__old-price,
