@@ -5,7 +5,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,11 +21,11 @@
                 <path fill="rgba(255, 255, 255, 0.3)" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
               </svg>
             </form>
-            <a class="header-tools__link header-tools__link-bookmark header-tools__link-bookmark_zero" href="#">
+            <a class="header-tools__link header-tools__link-bookmark header-tools__link-bookmark_zero" href="bookmark.html">
 				      Закладки:
               <span class="header-tools__count-bookmark">0</span>
             </a>
-            <a class="header-tools__link header-tools__link-cart header-tools__link-cart_zero" href="#">
+            <a class="header-tools__link header-tools__link-cart header-tools__link-cart_zero" href="order.html">
 				      Корзина:
               <span class="header-tools__count-cart">0</span>
             </a>
@@ -112,17 +112,15 @@
                     <span class="visually-hidden">Показать слайд дрели</span>
                   </label>
                 </div>
-                <div class="promo__slides">
-                  <div class="promo__slide promo__slide-hummer">
-                    <h3 class="promo__title promo__title-slide">Перфораторы</h3>
-                    <p class="promo__text">Настоящие мужские игрушки</p>
-                    <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
-                  </div>
-                  <div class="promo__slide promo__slide-drills">
-                    <h3 class="promo__title promo__title-slide">Дрели</h3>
-                    <p class="promo__text">Соседям на радость</p>
-                    <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
-                  </div>
+                <div class="promo__slide promo__slide-hummer">
+                  <h3 class="promo__title promo__title-slide">Перфораторы</h3>
+                  <p class="promo__text">Настоящие мужские игрушки</p>
+                  <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
+                </div>
+                <div class="promo__slide promo__slide-drills">
+                  <h3 class="promo__title promo__title-slide">Дрели</h3>
+                  <p class="promo__text">Соседям на радость</p>
+                  <a class="promo__link-catalog button" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -376,9 +374,11 @@
             <p class="about-us__text">Вы можете забрать товар сами,<br>
               заехав в наш офис:</p>
             <p class="about-us__map">
-              <img src="img/map.png" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="300" height="158">
+              <a class="about-us__link-msp" href="https://goo.gl/maps/JATsNvTXHvt" target="_blank">
+                <img src="img/map.png" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="300" height="158">
+              </a>
             </p>
-            <a class="about-us__link-map button" href="#">Заблудились? Напишите нам!</a>
+            <a class="about-us__link-write-us button" href="write-us.html">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </section>
@@ -412,7 +412,6 @@
               </li>
               <li class="footer-site-nav__item">
                 <a  class="footer-site-nav__link" href="contacts.html">Контакты</a>
-              </li>
               </li>
             </ul>
             <ul class="footer-catalog-nav">

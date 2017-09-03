@@ -5,7 +5,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,11 +25,11 @@
 				      Закладки:
               <span class="header-tools__count-bookmark">0</span>
             </a>
-            <a class="header-tools__link header-tools__link-cart" href="#">
+            <a class="header-tools__link header-tools__link-cart" href="bookmark.html">
 				      Корзина:
               <span class="header-tools__count-cart">10</span>
             </a>
-            <a class="header-tools__link header-tools__link-order" href="#">Оформить заказ</a>
+            <a class="header-tools__link header-tools__link-order" href="order.html">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -47,14 +47,14 @@
           </div>
           <div class="header-profile">
             <div class="header-profile__top">
-              <a class="header-profile__link-account" href="#">
+              <a class="header-profile__link-account" href="profile.html">
                 <span class="visually-hidden">Профиль:</span>
                 <svg class="header-profile__icon-account" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                   <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                 </svg>
                 Равшан Джамшутович
               </a>
-              <a class="header-profile__link-logout" href="#">
+              <a class="header-profile__link-logout" href="logout.html">
                 <span class="visually-hidden">Выход</span>
                 <svg class="header-profile__icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5">
                   <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
@@ -130,7 +130,7 @@
                   </div>
                 </div>
                 <div class="filter__range-cost">
-                  <span class="visually-hidden" for="from">от</span>
+                  <span class="visually-hidden">от</span>
                   <input class="filter__input" type="text" id="from" value="0">
                   <label class="filter__tip" for="to">
                     <span class="visually-hidden">до</span>&mdash;
@@ -164,7 +164,7 @@
                   <li class="filter__option">
                     <input class="filter__checkbox visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
                     <label class="filter__item" for="Makita">
-                      <svg class="filter__icon"xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <svg class="filter__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
                         <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
                         <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                       </svg>
@@ -174,7 +174,7 @@
                   <li class="filter__option">
                     <input class="filter__checkbox visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
                     <label class="filter__item" for="Dewalt">
-                      <svg class="filter__icon"xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                      <svg class="filter__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
                         <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
                         <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
                       </svg>
@@ -217,7 +217,7 @@
             <h2 class="catalog__title">Сортировка:</h2>
             <ul class="catalog__sorter">
               <li class="catalog__option">
-                <a class="catalog__link catalog__link_current" href="#">По цене</a>
+                <a class="catalog__link catalog__link_current">По цене</a>
               </li>
               <li class="catalog__option">
                 <a class="catalog__link"  href="#">По типу</a>
@@ -448,7 +448,8 @@
                 <li class="pagination__item">
                   <a class="pagination__link button-inner-page" href="#">2</a></li>
                 <li class="pagination__item">
-                  <a class="pagination__link button-inner-page" href="#">3</a></li>
+                  <a class="pagination__link button-inner-page" href="#">3</a>
+                </li>
               </ul>
               <a class="pagination__button button-inner-page" href="#">Следующая</a>
             </div>
@@ -493,7 +494,6 @@
               </li>
               <li class="footer-site-nav__item">
                 <a  class="footer-site-nav__link" href="contacts.html">Контакты</a>
-              </li>
               </li>
             </ul>
             <ul class="footer-catalog-nav">
