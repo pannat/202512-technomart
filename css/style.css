@@ -2444,14 +2444,14 @@ input[type="radio"].visually-hidden {
   position: fixed;
   z-index: 10;
 
-  display: none;
+  display: block;
   background: #ffffff;
 }
 
 .modal-close {
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 5px;
+  right: 9px;
 
   width: 25px;
   height: 25px;
@@ -2467,7 +2467,7 @@ input[type="radio"].visually-hidden {
   width: 620px;
   margin-left: -310px;
 
-  border-top: 10px solid #ee3643;
+  border-top: 7px solid #ee3643;
   -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75)
 }
@@ -2486,7 +2486,7 @@ input[type="radio"].visually-hidden {
 .write-us__column_left,
 .write-us__column_right {
   width: 220px;
-  margin-top: 50px;
+  margin-top: 47px;
   margin-bottom: 20px;
 }
 
@@ -2507,7 +2507,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 220px;
-  padding: 8px;
+  padding: 8px 15px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -2526,7 +2526,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 460px;
   height: 115px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 
   resize: none;
 }
@@ -2565,7 +2565,7 @@ input[type="radio"].visually-hidden {
   width: 620px;
   margin-left: -310px;
 
-  border-top: 10px solid #ee3643;
+  border-top: 7px solid #ee3643;
   -webkit-box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
   box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
@@ -2573,7 +2573,7 @@ input[type="radio"].visually-hidden {
 .modal-add-cart__text {
   position: relative;
 
-  margin: 70px 0 68px 0;
+  margin: 70px 0 75px 0;
   padding-left: 180px;
 
   font-size: 30px;
@@ -2584,8 +2584,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: -30px;
-  left: 82px;
+  top: -23px;
+  left: 80px;
 
   display: block;
   width: 66px;
@@ -2604,7 +2604,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-add-cart__link {
-  margin: 38px 0;
+  margin-top: 38px;
+  margin-bottom: 35px;
   width: 200px;
 
   text-align: center;
