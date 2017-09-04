@@ -1279,7 +1279,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__radio:checked:disabled ~ .filter__battery::before,
-.filter__radio:checked:disabled ~ .filter__network::before {
+.filter__radio:checked:disabled ~ .filter__network::before,
+.filter__radio:checked:disabled ~ .filter__battery:hover::before,
+.filter__radio:checked:disabled ~ .filter__network:hover::before {
   background: rgba(181, 181, 181, 0.3);
 }
 
