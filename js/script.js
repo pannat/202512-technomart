@@ -8,6 +8,8 @@ var popupMap = document.querySelector(".modal-map");
 var linkCart = document.querySelectorAll(".catalog__link-buy");
 var popupAddCart = document.querySelector(".modal-add-cart");
 
+
+
 if (link && popup && close) {
   var form = document.querySelector(".write-us__form");
   var author = document.querySelector(".write-us__input-name");
@@ -15,6 +17,7 @@ if (link && popup && close) {
   var inputMessage = document.querySelector(".write-us__input-message");
   var storageAuthor = localStorage.getItem("author");
   var storageMail = localStorage.getItem("inputMail");
+
   link.addEventListener("click", function(evt){
     evt.preventDefault();
     popup.classList.add("modal_show");
@@ -25,6 +28,11 @@ if (link && popup && close) {
     } else {
       author.focus();
     }
+  });
+  close.addEventListener("click", function(evt){
+    evt.preventDefault();
+    popup.classList.remove("modal_show");
+    popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function(evt) {
     if (!author.value || !inputMail.value || !inputMessage.value) {
@@ -37,11 +45,6 @@ if (link && popup && close) {
       localStorage.setItem("inputMail", inputMail.value);
     }
   });
-  close.addEventListener("click", function(evt){
-    evt.preventDefault();
-    popup.classList.remove("modal_show");
-    popup.classList.remove("modal-error");
-  });
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (popup.classList.contains("modal_show")) {
@@ -50,7 +53,7 @@ if (link && popup && close) {
       }
     }
   });
-};
+}
 
 if (linkMap && popupMap) {
   var closeMap = popupMap.querySelector(".modal_close");
@@ -69,7 +72,7 @@ if (linkMap && popupMap) {
       }
     }
   });
-};
+}
 
 if (linkCart && popupAddCart) {
   var closeAddCart = popupAddCart.querySelector(".modal_close");
@@ -87,7 +90,7 @@ if (linkCart && popupAddCart) {
   linkBack.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupAddCart.classList.remove("modal_show");
-  })
+  });
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (popupAddCart.classList.contains("modal_show")) {
@@ -95,6 +98,6 @@ if (linkCart && popupAddCart) {
       }
     }
   });
-};
+}
 
 
