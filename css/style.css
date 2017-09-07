@@ -5396,7 +5396,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-us {
-  top: 25px;
+  top: 5%;
   left: 50%;
 
   width: 620px;
@@ -5489,7 +5489,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map {
-  top: 500px;
+  top: 50%;
   left: 50%;
 
   width: 940px;
