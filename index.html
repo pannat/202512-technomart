@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин: Техномарт</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/min-style.css">
+    <link rel="stylesheet" href="css/min-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -36,8 +36,9 @@
       <div class="main-header__bottom">
         <div class="container main-header__inner-bottom">
           <div class="header-info">
-            <p class="header-info__text">Интернет-магазин<br>
-              строительных материалов<br> и инструментов для ремонта
+            <p class="header-info__text">Интернет-магазин
+              строительных материалов<br>
+              и инструментов для ремонта
             </p>
             <span class="visually-hidden">Наши контакты:</span>
             <p class="header-info__contact">
@@ -299,7 +300,7 @@
       <section class="services">
         <div class="container">
           <h2 class="services__title">Сервисы</h2>
-          <p class="services__promo-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          <p class="services__promo-text">Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
           </p>
           <div class="services__slider">
@@ -328,7 +329,7 @@
               <li class="service__slide service__slide-delivery">
                 <h3 class="service__title">Доставка</h3>
                 <p class="services__description">Мы с удовольствием доставим ваш товар прямо <br>
-                  к вашему подъезду совершенно бесплатно!<br>
+                  к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
@@ -336,8 +337,8 @@
               <li class="service__slide service__slide-guarantee">
                 <h3 class="service__title">Гарантия</h3>
                 <p class="services__description">Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его возгаранием,<br>
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  а также в случае пожара, спровоцированного его возгаранием,
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                   сгоревший товар на новый.<br>
                   Дом уж восстановите как-нибудь сами.</p>
               </li>
@@ -356,11 +357,11 @@
         <div class="container about-us__inner">
           <div class="about-us__column_left">
             <h2 class="about-us__title">Компания «Техномарт»</h2>
-            <p class="about-us__text">Настоящий мужской шоппинг начинается здесь!
-              Огромный выбор товаров для ремонта и<br>
+            <p class="about-us__text about-us__text-top">Настоящий мужской шоппинг начинается здесь!
+              Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
             </p>
-            <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            <p class="about-us__text about-us__text_bottom">Мы можем доставить ваш товар в самые отдаленные точки России!
               Техномарт работает со многими транспортными компаниями:</p>
             <ul class="about-us__list-partners">
               <li class="about-us__partner">Деловые линии</li>
@@ -371,10 +372,10 @@
           </div>
           <div class="about-us__column_right">
             <h2 class="about-us__title">Контакты</h2>
-            <p class="about-us__text">Вы можете забрать товар сами,<br>
+            <p class="about-us__text about-us__text_top-right">Вы можете забрать товар сами,
               заехав в наш офис:</p>
             <p class="about-us__map">
-              <a class="about-us__link-msp" href="https://goo.gl/maps/JATsNvTXHvt" target="_blank">
+              <a class="about-us__map_link" href="https://goo.gl/maps/JATsNvTXHvt" target="_blank">
                 <img src="img/map.png" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="300" height="158">
               </a>
             </p>
@@ -473,17 +474,19 @@
           <button class="write-us__button button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal-close" type="button">
+      <button class="modal_close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="modal-map__title visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-large.jpg" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="940" height="446">
-      <button class="modal-close" type="button">
+      <iframe class="modal-map__map_interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.367744507065!2d30.32265758728937!3d59.938972576459605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504635883575" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <img class="modal-map__map_image" src="img/map-large.jpg" alt="Карта проезда: Санкт-Петербург, ул. Б. Конюшенная, д.19/8" width="940" height="446">
+      <button class="modal_close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
