@@ -2221,7 +2221,6 @@ input[type="radio"].visually-hidden {
 
 .about-us__map {
   position: relative;
-  z-index: 2;
 
   margin-top: 30px;
   margin-bottom: 40px;
@@ -2229,13 +2228,6 @@ input[type="radio"].visually-hidden {
 
   width: 300px;
   height: 158px;
-}
-
-.about-us__map_link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .about-us__link-company {
@@ -5017,18 +5009,11 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 78px;
   padding: 0;
 
   width: 300px;
   height: 158px;
-}
-
-.about-us__map_link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .about-us__link-company {
@@ -5040,6 +5025,7 @@ input[type="radio"].visually-hidden {
 
 .about-us__link-write-us {
   width: 280px;
+  margin-top: 35px;
 
   text-align: center;
 }
