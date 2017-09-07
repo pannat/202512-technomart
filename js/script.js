@@ -1,9 +1,11 @@
+var linkMap = document.querySelector(".about-us__map_link");
+var popupMap = document.querySelector(".modal-map");
+
 var link = document.querySelector(".about-us__link-write-us");
 var popup = document.querySelector(".modal-write-us");
 var close = document.querySelector(".modal_close");
-
-var linkMap = document.querySelector(".about-us__map_link");
-var popupMap = document.querySelector(".modal-map");
+var storageAuthor = localStorage.getItem("author");
+var storageMail = localStorage.getItem("inputMail");
 
 var linkCart = document.querySelectorAll(".catalog__link-buy");
 var popupAddCart = document.querySelector(".modal-add-cart");
@@ -37,8 +39,6 @@ if (link && popup && close) {
   link.addEventListener("click", function(evt){
     evt.preventDefault();
     popup.classList.add("modal_show");
-    var storageAuthor = localStorage.getItem("author");
-    var storageMail = localStorage.getItem("inputMail");
     if (storageAuthor && storageMail) {
       author.value = storageAuthor;
       inputMail.value = storageMail;
