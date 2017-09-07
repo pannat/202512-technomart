@@ -9,18 +9,36 @@ var linkCart = document.querySelectorAll(".catalog__link-buy");
 var popupAddCart = document.querySelector(".modal-add-cart");
 
 
+if (linkMap && popupMap) {
+  var closeMap = popupMap.querySelector(".modal_close");
+  linkMap.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupMap.classList.add("modal_show");
+  });
+  closeMap.addEventListener("click", function(evt){
+    evt.preventDefault();
+    popupMap.classList.remove("modal_show");
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popupMap.classList.contains("modal_show")) {
+        popupMap.classList.remove("modal_show");
+      }
+    }
+  });
+}
 
 if (link && popup && close) {
   var form = document.querySelector(".write-us__form");
   var author = document.querySelector(".write-us__input-name");
   var inputMail= document.querySelector(".write-us__input-email");
   var inputMessage = document.querySelector(".write-us__input-message");
-  var storageAuthor = localStorage.getItem("author");
-  var storageMail = localStorage.getItem("inputMail");
 
   link.addEventListener("click", function(evt){
     evt.preventDefault();
     popup.classList.add("modal_show");
+    var storageAuthor = localStorage.getItem("author");
+    var storageMail = localStorage.getItem("inputMail");
     if (storageAuthor && storageMail) {
       author.value = storageAuthor;
       inputMail.value = storageMail;
@@ -50,25 +68,6 @@ if (link && popup && close) {
       if (popup.classList.contains("modal_show")) {
         popup.classList.remove("modal_show");
         popup.classList.remove("modal-error");
-      }
-    }
-  });
-}
-
-if (linkMap && popupMap) {
-  var closeMap = popupMap.querySelector(".modal_close");
-  linkMap.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popupMap.classList.add("modal_show");
-  });
-  closeMap.addEventListener("click", function(evt){
-    evt.preventDefault();
-    popupMap.classList.remove("modal_show");
-  });
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popupMap.classList.contains("modal_show")) {
-        popupMap.classList.remove("modal_show");
       }
     }
   });
