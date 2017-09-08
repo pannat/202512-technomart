@@ -449,6 +449,10 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
+.header-info::first-line {
+  padding-right: 50px;
+}
+
 .header-info__contact {
   margin: 0;
 
@@ -2686,7 +2690,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map {
-  top: 500px;
+  top: 25%;
   left: 50%;
 
   width: 940px;
@@ -2781,5 +2785,3 @@ input[type="radio"].visually-hidden {
 .modal-add-cart__bottom {
   background: #f1f1f1;
 }
-
-

@@ -5,7 +5,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин: Техномарт</title>
     <link rel="stylesheet" href="css/min-normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,11 +21,11 @@
                 <path fill="rgba(255, 255, 255, 0.3)" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
               </svg>
             </form>
-            <a class="header-tools__link header-tools__link-bookmark header-tools__link-bookmark_zero" href="#">
+            <a class="header-tools__link header-tools__link-bookmark header-tools__link-bookmark_zero" href="bookmark.html">
 				      Закладки:
               <span class="header-tools__count-bookmark">0</span>
             </a>
-            <a class="header-tools__link header-tools__link-cart" href="bookmark.html">
+            <a class="header-tools__link header-tools__link-cart" href="cart.html">
 				      Корзина:
               <span class="header-tools__count-cart">10</span>
             </a>
@@ -63,8 +63,8 @@
               </a>
             </div>
             <div class="header-profile__bottom">
-              <a class="header-profile__link" href="#">Мои заказы</a>
-              <a class="header-profile__link" href="#">Личный кабинет</a>
+              <a class="header-profile__link" href="orders.html">Мои заказы</a>
+              <a class="header-profile__link" href="profile.html">Личный кабинет</a>
             </div>
           </div>
           <nav class="main-nav">
@@ -131,7 +131,7 @@
                   </div>
                 </div>
                 <div class="filter__range-cost">
-                  <span class="visually-hidden">от</span>
+                  <label class="visually-hidden" for="from">от</label>
                   <input class="filter__input" type="text" id="from" value="0">
                   <label class="filter__tip" for="to">
                     <span class="visually-hidden">до</span>&mdash;
@@ -221,19 +221,19 @@
                 <a class="catalog__link catalog__link_current">По цене</a>
               </li>
               <li class="catalog__option">
-                <a class="catalog__link"  href="#">По типу</a>
+                <a class="catalog__link"  href="catalog-type.html">По типу</a>
               </li>
               <li class="catalog__option">
-                <a class="catalog__link" href="#">По функционалу</a>
+                <a class="catalog__link" href="catalog-functionality.html">По функционалу</a>
               </li>
             </ul>
-            <a class="catalog__rotation catalog__rotation_increase catalog__rotation_active"  href="#">
+            <a class="catalog__rotation catalog__rotation_increase catalog__rotation_active"  href="catalog-up.html">
               <svg class="catalog__icon-increase" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
               </svg>
               <span class="visually-hidden">По возрастанию</span>
             </a>
-            <a class="catalog__rotation catalog__rotation_decrease" href="#">
+            <a class="catalog__rotation catalog__rotation_decrease" href="catalog-down.html">
               <svg class="catalog__icon-decrease" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#c5c5c5" d="M5.5 10L0 0h11"/>
               </svg>
@@ -260,8 +260,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="boormark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item">
@@ -283,8 +283,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item catalog__new">
@@ -303,8 +303,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item">
@@ -326,8 +326,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item catalog__new">
@@ -350,8 +350,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item">
@@ -369,8 +369,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item catalog__new">
@@ -393,8 +393,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item">
@@ -416,8 +416,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
             <li class="catalog__item">
@@ -435,8 +435,8 @@
                 </ins>
               </p>
               <div class="catalog__action">
-                <a class="catalog__link-buy button" href="#">Купить</a>
-                <a class="catalog__link-bookmark button" href="#">В закладки</a>
+                <a class="catalog__link-buy button" href="order.html">Купить</a>
+                <a class="catalog__link-bookmark button" href="bookmark.html">В закладки</a>
               </div>
             </li>
           </ul>
@@ -447,12 +447,12 @@
                   <a class="pagination__link pagination__link_current button-inner-page">1</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link button-inner-page" href="#">2</a></li>
+                  <a class="pagination__link button-inner-page" href="catalog-page-2.html">2</a></li>
                 <li class="pagination__item">
-                  <a class="pagination__link button-inner-page" href="#">3</a>
+                  <a class="pagination__link button-inner-page" href="catalog-page-3.html">3</a>
                 </li>
               </ul>
-              <a class="pagination__button button-inner-page" href="#">Следующая</a>
+              <a class="pagination__button button-inner-page" href="catalog-page-4.html">Следующая</a>
             </div>
         </section>
       </div>
@@ -548,6 +548,6 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/min-script.js"></script>
   </body>
 </html>
