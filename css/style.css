@@ -2469,18 +2469,18 @@ input[type="radio"].visually-hidden {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
   }
 
   70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
   }
 
   90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
   }
 
   100% {
@@ -2491,18 +2491,18 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
   }
 
   70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
   }
 
   90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
   }
 
   100% {
