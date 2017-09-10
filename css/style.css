@@ -716,6 +716,12 @@ input[type="radio"].visually-hidden {
   background: #ee3643;
 }
 
+.promo__input-hummer:focus ~ .promo__slider-controls .promo__toggle-hummer::before,
+.promo__input-drills:focus ~ .promo__slider-controls .promo__toggle-drills::after {
+  outline: thin dotted;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .promo__slide {
   display: none;
   width: 620px;
@@ -1052,6 +1058,11 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.filter__checkbox:focus ~ .filter__item {
+  outline: thin dotted;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .filter__item {
   position: relative;
 
@@ -1143,6 +1154,12 @@ input[type="radio"].visually-hidden {
   background: #c5c5c5;
 }
 
+.filter__radio:focus ~ .filter__battery,
+.filter__radio:focus ~ .filter__network {
+  outline: thin dotted;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .filter__battery,
 .filter__network {
   position: relative;
@@ -1196,7 +1213,6 @@ input[type="radio"].visually-hidden {
 .button-inner-page:hover,
 .button-inner-page:focus {
   border-color: #bdc6ca;
-  outline: 0;
 }
 
 .button-inner-page:active {
@@ -1824,6 +1840,13 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border-top: 1px solid #ffffff;
+}
+
+.services__input-delivery:focus ~ .services__list .services__toggle-delivery,
+.services__input-guarantee:focus ~ .services__list .services__toggle-guarantee,
+.services__input-credit:focus ~ .services__list .services__toggle-credit {
+  outline: thin dotted;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .services__input-delivery:checked ~ .services__slides .service__slide-delivery,
