@@ -124,7 +124,6 @@ img {
   background: #ee3643;
   border-radius: 3px;
   cursor: pointer;
-  cursor: hand;
 }
 
 .button:hover,
@@ -809,7 +808,6 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 
   cursor: pointer;
-  cursor: hand;
 }
 
 .promo__toggle-hummer::before {
@@ -1103,7 +1101,6 @@ input[type="radio"].visually-hidden {
   background: #00ca74;
 
   cursor: pointer;
-  cursor: hand;
   pointer-events: none;
 }
 
@@ -1357,7 +1354,6 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   cursor: pointer;
-  cursor: hand;
 }
 
 .button-inner-page:hover,
@@ -2002,7 +1998,6 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   border-top: 1px solid #405069;
   cursor: pointer;
-  cursor: hand;
 }
 
 .services__toggle:hover {
@@ -2014,12 +2009,17 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border-top: 1px solid #ffffff;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services__input-delivery:checked ~ .services__slides .service__slide-delivery {
   z-index: 2;
+}
+
+.services__input-delivery:focus ~ .services__list .services__toggle-delivery,
+.services__input-guarantee:focus ~ .services__list .services__toggle-guarantee,
+.services__input-credit:focus ~ .services__list .services__toggle-credit {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services__input-guarantee:checked ~ .services__list .services__toggle-guarantee {
@@ -2027,8 +2027,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border-top: 1px solid #ffffff;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+
 }
 
 .services__input-guarantee:checked ~ .services__slides .service__slide-guarantee {
@@ -2040,8 +2039,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border-top: 1px solid #ffffff;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services__input-credit:checked ~ .services__slides .service__slide-credit {
@@ -2593,7 +2590,6 @@ input[type="radio"].visually-hidden {
   background: url("../img/form-2.svg") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
-  cursor: hand;
 }
 
 .modal-write-us {
