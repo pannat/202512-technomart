@@ -1433,6 +1433,8 @@ input[type="radio"].visually-hidden {
 .popular__price,
 .catalog__price {
   margin: 0;
+
+  overflow: hidden;
 }
 
 .popular__old-price,
@@ -1456,6 +1458,7 @@ input[type="radio"].visually-hidden {
 
   font-weight: 700;
   text-decoration: line-through;
+  white-space: nowrap;
   color: #a9a9a9;
 }
 
@@ -1806,6 +1809,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #32425c;
   border-top: 1px solid #405069;
+
   cursor: pointer;
 }
 
