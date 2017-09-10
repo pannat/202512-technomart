@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/min-normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -301,7 +302,7 @@
         <div class="container">
           <h2 class="services__title">Сервисы</h2>
           <p class="services__promo-text">Хороший интернет-магазин отличается от плохого не только ценами!
-            Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="services__slider">
             <h3 class="visually-hidden">Слайды: доставка, гарантия и кредит</h3>
@@ -328,7 +329,7 @@
             <ul class="services__slides">
               <li class="service__slide service__slide-delivery">
                 <h3 class="service__title">Доставка</h3>
-                <p class="services__description">Мы с удовольствием доставим ваш товар прямо <br>
+                <p class="services__description services__description_delivery">Мы с удовольствием доставим ваш товар прямо <br>
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
@@ -336,7 +337,7 @@
               </li>
               <li class="service__slide service__slide-guarantee">
                 <h3 class="service__title">Гарантия</h3>
-                <p class="services__description">Если купленный у нас товар поломается или заискрит,<br>
+                <p class="services__description services__description_guarantee">Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его возгаранием,
                   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                   сгоревший товар на новый.<br>
@@ -344,7 +345,7 @@
               </li>
               <li class="service__slide service__slide-credit">
                 <h3 class="service__title">Кредит</h3>
-                <p class="services__description">Залезть в долговую яму стало проще!<br>
+                <p class="services__description services__description_credit">Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.</p>
                 <a class="services__link button" href="#">Отправить заявку</a>
               </li>
@@ -383,6 +384,77 @@
           </div>
         </div>
       </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer__column_left">
+            <a class="footer-logo">Техномарт</a>
+            <div class="footer-info">
+              <p class="footer-info__text">
+                <span class="visually-hidden">Наши контакты:</span>
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a class="footer-info__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer__column_right">
+            <ul class="footer-site-nav">
+              <li class="footer-site-nav__item">
+                <a class="footer-site-nav__link" href="company.html">Компания</a>
+              </li>
+              <li class="footer-site-nav__item">
+                <a class="footer-site-nav__link" href="news.html">Новости</a>
+              </li>
+              <li class="footer-site-nav__item">
+                <a class="footer-site-nav__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="footer-site-nav__item">
+                <a  class="footer-site-nav__link" href="delivery.html">Доставка</a>
+              </li>
+              <li class="footer-site-nav__item">
+                <a  class="footer-site-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer-catalog-nav">
+              <li class="footer-catalog-nav__item">
+                <a class="footer-catalog-nav__link" href="#">Материалы</a>
+              </li>
+              <li class="footer-catalog-nav__item">
+                <a class="footer-catalog-nav__link" href="#">Техника</a>
+              </li>
+              <li class="footer-catalog-nav__item">
+                <a class="footer-catalog-nav__link" href="#">Инструмент</a>
+              </li>
+              <li class="footer-catalog-nav__item">
+                <a class="footer-catalog-nav__link" href="#">Спецпредложения</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <p class="footer-bottom__text footer-bottom__copyright">© 2010&ndash;2017 Компания «Техномарт»
+            Все права защищены</p>
+          <div class="footer-bottom__social">
+            <a class="footer-bottom__vk" href="#">Вконтакте</a>
+            <a class="footer-bottom__fb" href="#">Фейсбук</a>
+            <a class="footer-bottom__ig" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-bottom__developer">
+            <span class="visually-hidden">Информация о разработчике:</span>
+            <p class="footer-bottom__text">Обратная связь:
+              <a class="footer-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="footer-bottom__text footer-bottom__text_right">
+              Разработано &mdash;
+              <a class="footer-bottom__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <section class="modal modal-write-us">
       <h2 class="modal-write-us__title visually-hidden">Напишите нам</h2>
