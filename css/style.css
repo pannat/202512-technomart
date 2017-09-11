@@ -719,7 +719,7 @@ input[type="radio"].visually-hidden {
 .promo__input-hummer:focus ~ .promo__slider-controls .promo__toggle-hummer::before,
 .promo__input-drills:focus ~ .promo__slider-controls .promo__toggle-drills::after {
   outline: thin dotted;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .promo__slide {
@@ -1060,7 +1060,7 @@ input[type="radio"].visually-hidden {
 
 .filter__checkbox:focus ~ .filter__item {
   outline: thin dotted;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter__item {
@@ -1157,7 +1157,7 @@ input[type="radio"].visually-hidden {
 .filter__radio:focus ~ .filter__battery,
 .filter__radio:focus ~ .filter__network {
   outline: thin dotted;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter__battery,
@@ -1848,7 +1848,7 @@ input[type="radio"].visually-hidden {
 .services__input-guarantee:focus ~ .services__list .services__toggle-guarantee,
 .services__input-credit:focus ~ .services__list .services__toggle-credit {
   outline: thin dotted;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .services__input-delivery:checked ~ .services__slides .service__slide-delivery,
