@@ -1770,7 +1770,7 @@ input[type="radio"].visually-hidden {
 .services__promo-text {
   width: 400px;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 49px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1780,6 +1780,9 @@ input[type="radio"].visually-hidden {
 .services__slider {
   display: -webkit-box;
   display: flex;
+  min-height: 265px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .services__list {
@@ -1794,7 +1797,6 @@ input[type="radio"].visually-hidden {
   width: 240px;
   margin: 0;
   margin-right: 80px;
-  margin-bottom: 100px;
   padding: 0;
 
   list-style: none;
@@ -1865,26 +1867,21 @@ input[type="radio"].visually-hidden {
 
 .service__slide {
   display: none;
+  min-height: 265px;
 }
 
 .service__slide-delivery {
   width: 620px;
-  min-height: 240px;
-
   background: url("../img/delivery.png") no-repeat 150px 22px;
 }
 
 .service__slide-guarantee {
   width: 630px;
-  min-height: 265px;
-
   background: url("../img/guarantee.png") no-repeat 240px 0;
 }
 
 .service__slide-credit {
   width: 630px;
-  min-height: 260px;
-
   background: url("../img/credit.png") no-repeat 165px -2px;
 }
 
@@ -1930,7 +1927,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
    justify-content: space-between;
-
   padding-bottom: 20px;
 }
 
